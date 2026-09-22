@@ -11,8 +11,8 @@
 
 ## What is this?
 
-The NEX game server for **Super Smash Bros. Ultimate** on [Nextendo Network](https://nextendo.network)
-— authentication, matchmaking, NAT traversal, and the online-init handlers (DataStore `0x73` /
+The NEX game server for **Super Smash Bros. Ultimate** on [Nextendo Network](https://nextendo.network):
+authentication, matchmaking, NAT traversal, and the online-init handlers (DataStore `0x73` /
 Utility `0x6E`) that bring SSBU's online mode up. Built on the
 [**nextendo-nex**](https://github.com/NextendoNetwork/nextendo-nex) core.
 
@@ -28,7 +28,7 @@ cp example.env .env   # then edit .env
 go run .
 ```
 
-No secrets, keys, or measured data are baked into the source — everything comes from the environment.
+No secrets, keys, or measured data are baked into the source: everything comes from the environment.
 
 ## What this is not
 
@@ -38,4 +38,4 @@ value, not a secret.
 
 ## License
 
-**[PolyForm Shield License 1.0.0](LICENSE.md)** — source-available.
+**[PolyForm Shield License 1.0.0](LICENSE.md)**, source-available.
