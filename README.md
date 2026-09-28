@@ -1,41 +1,12 @@
-<h1 align="center">super-smash-bros-ultimate</h1>
+# nextendo-ssbu (nx-mod testing)
 
-<p align="center"><b>Nextendo Network game server for Super Smash Bros. Ultimate.</b></p>
+nx-mod's `testing` fork of [super-smash-bros-ultimate](https://github.com/NextendoNetwork/super-smash-bros-ultimate): Super Smash Bros. Ultimate NEX server on the nextendo-nex core.
+Part of [nextendo-testing](https://github.com/nx-mod/nextendo-testing): the whole Nextendo Network, run on a LAN. Upstream's README is kept as [README.upstream.md](README.upstream.md).
 
-<p align="center">
-  <img src="https://img.shields.io/badge/license-PolyForm%20Shield%201.0.0-orange" alt="License">
-  <img src="https://img.shields.io/badge/go-1.23%2B-00ADD8" alt="Go 1.23+">
-</p>
+## nx-mod changes
 
----
+- Standalone build, TLS cert and `run.sh` so it runs from the repo; prebuilt Linux binaries in `dist/`.
 
-## What is this?
+## Credits
 
-The NEX game server for **Super Smash Bros. Ultimate** on [Nextendo Network](https://nextendo.network):
-authentication, matchmaking, NAT traversal, and the online-init handlers (DataStore `0x73` /
-Utility `0x6E`) that bring SSBU's online mode up. Built on the
-[**nextendo-nex**](https://github.com/NextendoNetwork/nextendo-nex) core.
-
-> **DataStore / Utility init is a stub.** SSBU calls a set of DataStore and Utility getters during
-> the online bring-up. This server answers them with a minimal valid response (empty list) so the
-> game proceeds; a full server-side implementation is not yet part of this tree, so online play is
-> not complete out of the box.
-
-## Running
-
-```sh
-cp example.env .env   # then edit .env
-go run .
-```
-
-No secrets, keys, or measured data are baked into the source: everything comes from the environment.
-
-## What this is not
-
-Ships **no** Nintendo code, keys, measured data, or copyrighted assets. Independent reimplementation
-for a community-run service; not affiliated with Nintendo. The NEX access key is a public per-title
-value, not a secret.
-
-## License
-
-**[PolyForm Shield License 1.0.0](LICENSE.md)**, source-available.
+super-smash-bros-ultimate is the work of the **Nextendo Network team** — https://nextendo.network. nx-mod only adds the changes above, for LAN testing. Nextendo is awesome.
